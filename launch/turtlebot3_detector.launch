@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
-    <arg name="use_rviz" default="True" />
+    <arg name="use_rviz" default="False" />
     <arg name="use_camera" default="false" />
     <arg name="use_bag" default="False" />
     <arg name="bag_name" default="640x480_logitech_aruco3_compressed.orig" />
 
-    <arg name="image_width" default="640" /> <!-- 640, 1920 -->
-    <arg name="image_height" default="480" /> <!-- 480, 1080 -->
-    <arg name="camera" default="/usb_cam/image_raw" />
-    <arg name="camera_info" default="/usb_cam/camera_info" />
+    <arg name="image_width" default="1920" /> <!-- 640, 1920 -->
+    <arg name="image_height" default="1920" /> <!-- 480, 1080 -->
+    <arg name="camera" default="/camera/color/image_raw" />
+    <arg name="camera_info" default="/camera/color/camera_info" />
     <arg name="tf_prefix" default="marker_id" />
     <arg name="show_detections" default="true" />
     <arg name="marker_size" default="0.1" doc="length of the physical marker's side in meters"/>
     <arg name="dictionary_name" default="DICT_ARUCO_ORIGINAL" />
-    <arg name="blur_window_size" default="7" />
+    <arg name="blur_window_size" default="5" />
     <arg name="num_detected" default="25" /><!-- 0: do not use it, -->
     <arg name="min_prec_value" default="50" /><!-- 0: do not use it, 80 means aruco marker must be detected in 80% of the last pics to be displayed -->
  
